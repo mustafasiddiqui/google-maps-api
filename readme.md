@@ -9,15 +9,15 @@ Instructions
 2. Clone this repository into a folder
 
 3. Create .env file in folder with the following:
-    GOOGLE_MAPS_API_KEY=<your_api_key>
-    MONGO_DB_USER=<db_user_name>
-    MONGO_DB_PASSWORD=<db_password>
+    - GOOGLE_MAPS_API_KEY=<your_api_key>
+    - MONGO_DB_USER=<db_user_name>
+    - MONGO_DB_PASSWORD=<db_password>
 
 4. Install NodeJS from https://nodejs.org/en/
 
 5. From a command line:
-    npm install -g nodemon
-    nodemon app.js
+    - npm install -g nodemon
+    - nodemon app.js
 
 6. Verify that your API works by accessing: 
 http://localhost:3000/api/stores?zip_code=90048
