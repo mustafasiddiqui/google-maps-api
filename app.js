@@ -7,7 +7,7 @@ const Store = require('./api/models/store');
 const { response } = require('express');
 const GoogleMapsService = require('./api/services/googleMapsService');
 const googleMaps = new GoogleMapsService();
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
